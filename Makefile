@@ -55,7 +55,7 @@ XSLT_HTML_PARAMS = -o $(HTMLOUT).html
 
 XSLT_CHUNKED_PARAMS = --stringparam base.dir $(CHUNKDIR)/
 
-DBLATEX_PARAMS = -o $(PDFOUT).pdf \
+DBLATEX_PARAMS = -V -o $(PDFOUT).pdf \
 	-P latex.class.options=11pt \
 	-P term.breakline=1
 
@@ -107,6 +107,7 @@ html:
 	cp -R images $(HTMLDIR)
 
 pdf:
+	mkdir -p ${PDFDIR}
 	ln -s ../images/ pages/images
 	dblatex $(DBLATEX_PARAMS) $(INPUT).xml
 	rm -f pages/images
