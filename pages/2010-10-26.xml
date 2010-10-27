@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
          version ="5.0"
+         xmlns:xl="http://www.w3.org/1999/xlink"
          xml:id="Migration-2010-10-26">
 
   <title>Pictures from 2010-10-26</title>
 
-
-
-
-
   <para>
-    <inlinemediaobject>
-      <alt>Servers</alt>
-      <imageobject>
-        <imagedata align="center" format="JPG" fileref="images/thumbnails/2010-10-26/2010-10-26.001.jpg"/>
-      </imageobject>
-    </inlinemediaobject>
+    <link xl:href="images/fullsize/2010-10-26/2010-10-26.001.jpg">
+      <inlinemediaobject>
+        <alt>Servers</alt>
+        <imageobject>
+          <imagedata align="center" format="JPG" fileref="images/thumbnails/2010-10-26/2010-10-26.001.jpg"/>
+        </imageobject>
+      </inlinemediaobject>
+    </link>
 
-    <inlinemediaobject>
-      <alt>Servers</alt>
-      <imageobject>
-        <imagedata align="center" format="JPG" fileref="images/thumbnails/2010-10-26/2010-10-26.002.jpg"/>
-      </imageobject>
-    </inlinemediaobject>
 
-    <inlinemediaobject>
-      <alt>Servers</alt>
-      <imageobject>
-        <imagedata align="center" format="JPG" fileref="images/thumbnails/2010-10-26/2010-10-26.003.jpg"/>
-      </imageobject>
-    </inlinemediaobject>
+    <link xl:href="images/fullsize/2010-10-26/2010-10-26.002.jpg">
+      <inlinemediaobject>
+        <alt>Servers</alt>
+        <imageobject>
+          <imagedata align="center" format="JPG" fileref="images/thumbnails/2010-10-26/2010-10-26.002.jpg"/>
+        </imageobject>
+      </inlinemediaobject>
+    </link>
+
+    <link xl:href="images/fullsize/2010-10-26/2010-10-26.003.jpg">
+      <inlinemediaobject>
+        <alt>Servers</alt>
+        <imageobject>
+          <imagedata align="center" format="JPG" fileref="images/thumbnails/2010-10-26/2010-10-26.003.jpg"/>
+        </imageobject>
+      </inlinemediaobject>
+    </link>
 
   </para>
 

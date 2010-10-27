@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
          version ="5.0"
+         xmlns:xl="http://www.w3.org/1999/xlink"
          xml:id="Migration-2008-02-22">
 
   <title>Pictures from 2008-02-22</title>
 
   <para>
-    <inlinemediaobject>
-      <alt>Servers</alt>
-      <imageobject>
-        <imagedata align="center" format="JPG" fileref="images/thumbnails/2008-02-22/2008-02-22.01.jpg"/>
-      </imageobject>
-    </inlinemediaobject>
+    <link xl:href="images/fullsize/2008-02-22/2008-02-22.01.jpg">
+      <inlinemediaobject>
+        <alt>Servers</alt>
+        <imageobject>
+          <imagedata align="center" format="JPG" fileref="images/thumbnails/2008-02-22/2008-02-22.01.jpg"/>
+        </imageobject>
+      </inlinemediaobject>
+    </link>
 
   </para>
 
