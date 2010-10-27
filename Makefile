@@ -61,7 +61,7 @@ OSTYPE := $(shell uname -s)
 # OS X?
 ifeq ("$(findstring Darwin, $(OSTYPE))", "Darwin")
 	SED = sed -E
-	FIND = find . -E
+	FIND = find -E .
 # Assume GNU
 else
 	SED = sed -r
