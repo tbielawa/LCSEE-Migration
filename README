@@ -1,0 +1,27 @@
+BUILDING THE DOCS
+=================
+Make sure the right variables are (un)commented in the Makefile as
+they control the paths used to find the DocBook schema and
+style sheets.
+
+Install the rights deps for your system. Again, check the Makefile for
+details.
+
+
+TARGETS
+=======
+    dist-clean - Runs 'clean' to get rid of garbage like *~ files and
+    removes output from prior runs
+
+    html/pdf/chunked - Create html/pdf/chunked html documents in the
+    respective output/* folder
+
+    docs - Create html & pdf & chunked html documents in the
+    respective output/* folder
+
+
+HELPERS
+=======
+    locator - Generates a proper schemas.xml file to help nxml-mode
+    find your RelaxNG DocBook schemas.
+
