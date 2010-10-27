@@ -107,8 +107,9 @@ html:
 	cp -R images $(HTMLDIR)
 
 pdf:
-	cp -R images pages
+	ln -s ../images/ pages/images
 	dblatex $(DBLATEX_PARAMS) $(INPUT).xml
+	rm -f pages/images
 
 docs: docdir html pdf chunked
 
