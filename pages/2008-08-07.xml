@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
-	 version ="5.0"
-	 xml:id="Migration-2008-08-07">
+         version ="5.0"
+         xml:id="Migration-2008-08-07">
 
   <title>Pictures from 2008-08-07</title>
 
   <para>
-images/thumbnails//2008-08-07/2008-08-07.001.jpg
-images/thumbnails//2008-08-07/2008-08-07.002.jpg
-images/thumbnails//2008-08-07/2008-08-07.003.jpg
-images/thumbnails//2008-08-07/2008-08-07.004.jpg
+    <inlinemediaobject>
+      <alt>Servers</alt>
+      <imageobject>
+        <imagedata align="center" format="JPG" fileref="images/thumbnails//2008-08-07/2008-08-07.001.jpg"/>
+      </imageobject>
+    </inlinemediaobject>
+
+    <inlinemediaobject>
+      <alt>Servers</alt>
+      <imageobject>
+        <imagedata align="center" format="JPG" fileref="images/thumbnails//2008-08-07/2008-08-07.002.jpg"/>
+      </imageobject>
+    </inlinemediaobject>
+
+    <inlinemediaobject>
+      <alt>Servers</alt>
+      <imageobject>
+        <imagedata align="center" format="JPG" fileref="images/thumbnails//2008-08-07/2008-08-07.003.jpg"/>
+      </imageobject>
+    </inlinemediaobject>
+
+    <inlinemediaobject>
+      <alt>Servers</alt>
+      <imageobject>
+        <imagedata align="center" format="JPG" fileref="images/thumbnails//2008-08-07/2008-08-07.004.jpg"/>
+      </imageobject>
+    </inlinemediaobject>
+
   </para>
 
 
