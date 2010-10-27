@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book xmlns="http://docbook.org/ns/docbook"
+      version="5.0"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xml:id="LCSEE-Server-Migration">
+
+  <info>
+    <title>LCSEE Server Migration (2008 → 2009 → 2010)</title>
+
+    <subtitle>From Chestnutridge to ESB </subtitle>
+    
+    <date>2008 → 2009 → 2010</date>
+  </info>
+
+  <xi:include href="pages/2008-02-22.xml"/>
+  <xi:include href="pages/2008-08-07.xml"/>
+  <xi:include href="pages/2008-11-25.xml"/>
+  <xi:include href="pages/2008-12-01.xml"/>
+  <xi:include href="pages/2010-10-26.xml"/>
+</book>
