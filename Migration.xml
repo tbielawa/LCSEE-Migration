@@ -6,10 +6,20 @@
 
   <info>
     <title>LCSEE Server Migration (2008 → 2009 → 2010)</title>
-
-    <subtitle>From Chestnutridge to ESB </subtitle>
-    
+    <subtitle>From Chestnutridge to ESB</subtitle>
     <date>2008 → 2009 → 2010</date>
+
+    <author>
+      <personname>
+	<firstname>Tim</firstname>
+	<surname>Bielawa</surname>
+      </personname>
+      <email>tbielawa@csee.wvu.edu</email>
+      <contrib>Resident historian and DocBook aficionado</contrib>
+    </author>
+
+    
+      
   </info>
 
   <xi:include href="pages/2008-02-22.xml"/>

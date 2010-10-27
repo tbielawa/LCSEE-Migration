@@ -11,8 +11,13 @@
 ##################################################################
 INPUT = Migration
 OUTPUT = index
-DEST = html
-CHUNKDIR = paged
+DEST = output
+HTMLDIR = $(DEST)/html
+HTMLOUT = $(HTMLDIR)/$(OUTPUT)
+CHUNKDIR = $(DEST)/paged
+CHUNKOUT = $(CHUNKDIR)/$(OUTPUT)
+PDFDIR = $(DEST)/pdf
+PDFOUT = $(PDFDIR)/$(OUTPUT)
 OUTFILE = $(DEST)/$(OUTPUT)
 
 ##################################################################
@@ -46,11 +51,11 @@ HTML_CHUNKED_xsl = $(STYLEDIR)/html/chunk.xsl
 XSLTPARAMS = --xinclude \
 	--stringparam section.autolabel 1
 
-XSLT_HTML_PARAMS = -o $(OUTFILE).html
+XSLT_HTML_PARAMS = -o $(HTMLOUT).html
 
 XSLT_CHUNKED_PARAMS = --stringparam base.dir $(CHUNKDIR)/
 
-DBLATEX_PARAMS = -o $(OUTFILE).pdf \
+DBLATEX_PARAMS = -o $(PDFOUT).pdf \
 	-P latex.class.options=11pt \
 	-P term.breakline=1
 
@@ -95,18 +100,24 @@ docdir:
 
 chunked:
 	xsltproc $(XSLTPARAMS) $(XSLT_CHUNKED_PARAMS) $(HTML_CHUNKED_xsl) $(INPUT).xml
+	cp -R images $(CHUNKDIR)
 
 html:
 	xsltproc $(XSLTPARAMS) $(XSLT_HTML_PARAMS) $(HTML_xsl) $(INPUT).xml
+	cp -R images $(HTMLDIR)
 
 pdf:
+	cp -R images pages
 	dblatex $(DBLATEX_PARAMS) $(INPUT).xml
 
 docs: docdir html pdf chunked
 
 locator:
-	sed "s'%SCHEMADIR%'${SCHEMADIR}'" .schemas.xml > schemas.xml
+	sed "s'%SCHEMADIR%'$(SCHEMADIR)'" .schemas.xml > schemas.xml
 
 clean:
 	$(FIND)  \( -regex "^[.]?(.+)\~$$" -o -regex "./[.]?#.*#" \) -delete
 	rm -fR output/*
+
+dist-clean: clean
+	rm -fR $(DEST) $(CHUNKDIR)
